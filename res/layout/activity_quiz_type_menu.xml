@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <CheckBox
+         android:id="@+id/checkbox_english_to_japanese"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:onClick="onCheckboxClicked"
+         android:text="@string/checkbox_english_to_japanese" />
+
+     <Button
+         android:id="@+id/kanji"
+         android:layout_width="110dp"
+         android:layout_height="115dp"
+         android:layout_above="@+id/checkbox_english_to_japanese"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="37dp"
+         android:drawableTop="@drawable/year_icon"
+         android:onClick="kanji"
+         android:text="@string/kanji" />
+
+     <Button
+         android:id="@+id/hiragana"
+         android:layout_width="110dp"
+         android:layout_height="115dp"
+         android:layout_alignBaseline="@+id/katakana"
+         android:layout_alignBottom="@+id/katakana"
+         android:layout_alignParentLeft="true"
+         android:drawableTop="@drawable/a_icon"
+         android:onClick="hiragana"
+         android:text="@string/hiragana" />
+
+     <Button
+         android:id="@+id/katakana"
+         android:layout_width="110dp"
+         android:layout_height="115dp"
+         android:layout_alignBaseline="@+id/kanji"
+         android:layout_alignBottom="@+id/kanji"
+         android:layout_centerHorizontal="true"
+         android:drawableTop="@drawable/a_kata_icon"
+         android:onClick="katakana"
+         android:text="@string/katakana" />
+
+     <CheckBox
+         android:id="@+id/checkbox_japanese_to_english"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/checkbox_english_to_japanese"
+         android:onClick="onCheckboxClicked"
+         android:text="@string/checkbox_japanese_to_english" />
+
+     <CheckBox
+         android:id="@+id/checkbox_write_chars"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/checkbox_japanese_to_english"
+         android:onClick="onCheckboxClicked"
+         android:text="@string/checkbox_write_chars" />
+
+</RelativeLayout>

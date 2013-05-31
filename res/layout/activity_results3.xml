@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView
+    android:id="@+id/question_counter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:textSize="10sp" />
+
+<TextView
+    android:id="@+id/question"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="33dp"
+    android:textSize="40sp"
+    android:contentDescription="@string/question" />
+
+<com.wb.test.UsefulImageButton
+    android:id="@+id/option2"
+    android:layout_width="115dp"
+    android:layout_height="115dp"
+    android:layout_alignLeft="@+id/option4"
+    android:layout_below="@+id/option4"
+    android:layout_marginTop="22dp" />
+
+<com.wb.test.UsefulImageButton
+    android:id="@+id/option1"
+    android:layout_width="115dp"
+    android:layout_height="115dp"
+    android:layout_alignLeft="@+id/option3"
+    android:layout_alignTop="@+id/option2" />
+
+<com.wb.test.UsefulImageButton
+    android:id="@+id/option3"
+    android:layout_width="115dp"
+    android:layout_height="115dp"
+    android:layout_above="@+id/option2"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="18dp" />
+
+<com.wb.test.UsefulImageButton
+    android:id="@+id/option4"
+    android:layout_width="115dp"
+    android:layout_height="115dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="20dp" />
+
+<Button
+	android:id="@+id/next_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_alignParentTop="true"
+	android:onClick="next"
+	android:text="@string/button_next" />
+
+<Button
+	android:id="@+id/previous_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentLeft="true"
+	android:layout_alignParentTop="true"
+	android:onClick="previous"
+	android:text="@string/button_previous" />
+
+</RelativeLayout>

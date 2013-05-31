@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <group android:id="@+id/navigation" android:checkableBehavior="none" android:menuCategory="system" android:enabled="true" android:visible="true">
+        <item android:id="@+id/practice" android:orderInCategory="1" android:enabled="true" android:checkable="false" android:showAsAction="always|withText" android:checked="false" android:title="@string/button_draw" android:visible="true" android:titleCondensed="@string/button_draw_condensed" ></item>
+        <item android:id="@+id/quiz" android:orderInCategory="2" android:enabled="true" android:checkable="false" android:checked="false" android:title="@string/button_quiz" android:visible="true" android:showAsAction="always|withText" android:titleCondensed='@string/button_quiz_condensed' ></item>
+    </group>
+
+</menu>

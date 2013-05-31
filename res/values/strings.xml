@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">学ぶ</string>
+    <string name="action_settings">Settings</string>
+    <string name="question">Question</string>
+    <string name="button_quiz">Test Yourself!</string>
+    <string name="button_quiz_condensed">Test</string>
+    <string name="button_draw">Practice!</string>
+    <string name="button_draw_condensed">Practice</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_check">Check Your Answer!</string>
+    <string name="button_give_up">Give Up</string>
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hiragana">Hiragana</string>
+    <string name="katakana">Katakana</string>
+    <string name="kanji">Kanji</string>
+    <string name="random">Random</string>
+    <string name="checkbox_japanese_to_english">Enter English Names For Japanese Characters</string>
+    <string name="checkbox_english_to_japanese">Enter Japanese Characters For English Names</string>
+    <string name="checkbox_write_chars">Draw Japanese Characters For English Names</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+	<string name="title_activity_draw_screen">Practice</string>
+	<string name="title_activity_loaded_image_screen">Results</string>
+	<string name="title_activity_type_menu">Language Menu</string>
+	<string name="title_activity_character_choice">Character Menu</string>
+	<string name="title_activity_quiz_type_menu">Quiz Menu</string>
+	<string name="title_activity_quiz">Quiz</string>
+	<string name="title_activity_results">Results</string>
+	<string name="button_submit">Submit</string>
+	<string name="button_retry">Retry</string>
+	
+</resources>

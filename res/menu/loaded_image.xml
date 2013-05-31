@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <group android:id="@+id/navigation" android:checkableBehavior="none" android:menuCategory="system" android:enabled="true" android:visible="true">
+        <item android:id="@+id/practice" android:orderInCategory="1" android:enabled="true" android:checkable="false" android:showAsAction="always|withText" android:checked="false" android:title="@string/button_draw" android:visible="true" android:titleCondensed="@string/button_draw_condensed" ></item>
+        <item android:id="@+id/quiz" android:orderInCategory="2" android:enabled="true" android:checkable="false" android:checked="false" android:title="@string/button_quiz" android:visible="true" android:showAsAction="always|withText" android:titleCondensed='@string/button_quiz_condensed' ></item>
+    </group>
+    <group android:id="@+id/group1">
+    	<item android:id="@+id/retry" android:checkable="false" android:visible="true" android:checked="false" android:title="@string/button_retry" android:showAsAction="always" android:enabled="true" android:icon="@drawable/ic_action_retry"></item>
+    </group>
+    
+</menu>

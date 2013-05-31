@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wb.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wb.test.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wb.test.DrawScreenActivity"
+            android:label="@string/title_activity_draw_screen"
+            android:parentActivityName="com.wb.test.TypeMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.DrawScreenActivity" />
+        </activity>
+         <activity
+            android:name="com.wb.test.LoadedImageActivity"
+            android:label="@string/title_activity_loaded_image_screen"
+            android:parentActivityName="com.wb.test.TypeMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.LoadedImageActivity" />
+        </activity>
+         <activity
+            android:name="com.wb.test.TypeMenuActivity"
+            android:label="@string/title_activity_type_menu"
+            android:parentActivityName="com.wb.test.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.TypeMenuActivity" />
+        </activity>
+         <activity
+            android:name="com.wb.test.CharacterChoiceActivity"
+            android:label="@string/title_activity_character_choice"
+            android:parentActivityName="com.wb.test.TypeMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.CharacterChoiceActivity" />
+        </activity>
+         <activity
+            android:name="com.wb.test.QuizTypeMenuActivity"
+            android:label="@string/title_activity_quiz_type_menu"
+            android:parentActivityName="com.wb.test.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.QuizTypeMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.wb.test.QuizActivity"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName="com.wb.test.QuizTypeMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.QuizActivity" />
+        </activity>
+        <activity
+            android:name="com.wb.test.ResultsActivity"
+            android:label="@string/title_activity_results"
+            android:parentActivityName="com.wb.test.QuizTypeMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wb.test.ResultsActivity" />
+        </activity>
+    </application>
+</manifest>
